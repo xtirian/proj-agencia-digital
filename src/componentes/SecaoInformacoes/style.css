@@ -1,0 +1,50 @@
+.tema-claro {
+    background-color: #f6f8fc;
+    color: black;
+}
+
+.tema-escuro {
+    background-color: #32333c;
+    color: #f6f8fc;
+}
+
+.experiencia{
+    padding: 50px 0;
+}
+
+.experiencia h3 {
+    margin: 50px;
+    font-size: 40px;
+    text-align: center;    
+    position: relative;
+}
+
+.experiencia h3::before {
+    content: "";
+    position: absolute;
+    left: 45%;
+    bottom: -12px;
+    width: 100px;
+    height: 5px;
+    background-color: #feb633;
+}
+
+.experiencia p,
+.experiencia span {
+    color: #808fa3;
+    font-size: 14px;
+}
+
+.exp-texto {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.grid-experiencia {    
+    display: flex;
+    justify-content: center;
+    margin: 50px 20px;
+
+}

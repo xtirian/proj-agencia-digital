@@ -1,0 +1,39 @@
+.sct-banner {
+    display: flex;
+    height: 85vh;
+}
+
+.sct-banner div {
+    width: 50vw;
+    padding: 15px;
+}
+
+#banner {    
+    background-image: url('/public/assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.titulo-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fafbfc;
+    color: #022144;
+}
+
+.titulo-pagina p {
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.titulo-pagina h2 {
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.titulo-pagina span {
+    font-size: 44px;
+    font-weight: 900;
+}

@@ -1,28 +1,47 @@
-.card-box {
+.card-modo-claro p {
+    color: #8a8fa3;
+  }
+  
+  .card-modo-escuro {
+    border: 1px solid #ffffff0d;
+  }
+
+#card-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 1px #e6f1f7;    
     padding: 28px;
     height: 300px;
     max-width: 300px;
 }
 
-.card-box span {
+#card-box span {
     font-size: 10px;
     margin: 3px 0;
 }
 
-.card-box h4 {
+#card-box h4 {
     text-align: left;
     font-size: 20px;
 }
 
-.card-box p {
+#card-box p {    
     margin: 15px 0;
+    font-size: 16px;
 }
 
-.card-box:hover {
+#card-box:hover {
     background-color: #feb633;
     border: 1px solid #8f8f8f;
+}
+
+
+@media screen and (max-width:768px) {
+    #card-box{    
+    max-width: 100%;
+    padding: 28px 36px 28px 28px;}
+}
+
+@media screen and (max-width:375px) {
+    
 }

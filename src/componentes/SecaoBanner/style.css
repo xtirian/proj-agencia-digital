@@ -1,3 +1,13 @@
+.tema-claro {
+    background-color: #fff;
+    color: black;
+}
+
+.tema-escuro {
+    background-color: #252525;
+    color: #f6f8fc;
+}
+
 .sct-banner {
     display: flex;
     height: 85vh;
@@ -36,4 +46,15 @@
 .titulo-pagina span {
     font-size: 44px;
     font-weight: 900;
+}
+
+@media screen and (max-width:768px) {
+
+    .sct-banner div {
+        width: 100%;
+    }
+
+    #banner {
+        display: none;
+    }
 }

@@ -3,7 +3,7 @@ import './style.css'
 
 const Card = (props) => {
   return (
-    <div className="card-box">
+    <div id="card-box" className={props.temaAtual ? "card-modo-escuro " : "card-modo-claro "}>
       {/* Colocar Cards aqui || Serão 3 cards de experiencias de trabalho*/}
 
       <span className="infospan">{props.Data}</span>

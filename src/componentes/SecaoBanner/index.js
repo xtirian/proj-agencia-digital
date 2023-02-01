@@ -1,12 +1,10 @@
 import React from "react";
 import './style.css';
 
-const Banner = () => {
+const Banner = (props) => {
     return (
         <section className="sct-banner">
-          <div id="banner" 
-          // className="tema-claro"
-          >
+          <div id="banner" className={props.temaAtual ? "tema-escuro" : "tema-claro"}>
             {/* imagem no background */}
           </div>
           <div className="titulo-pagina">

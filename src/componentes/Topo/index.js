@@ -1,15 +1,19 @@
-import React from "react"
 import './style.css'
 
-const Topo = () => {
+
+const Topo = (props) => {
+
+    const Lua = '/assets/moon.png';
+    const Sol = '/assets/sun.png';
+
     return (
-    <header>
+    <header className={props.temaAtual ? "tema-escuro" : "tema-claro"}>
         <img src="/assets/logoM.png" alt="logo" className="logo" />
         <div>
-          <button id="tema-btn" className="tema-claro"
-          //   onClick={MudarTema}
+          <button id="tema-btn" className={props.temaAtual ? "tema-escuro" : "tema-claro"}
+            onClick={props.MudarTema}
           >
-            <img src="/assets/moon.png" alt="btn-tema" className="btn-img" />
+            <img src={props.temaAtual ? Sol : Lua} alt="btn-tema" className="btn-img" />
           </button>
         </div>
       </header>
